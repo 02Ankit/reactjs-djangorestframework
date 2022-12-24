@@ -1,0 +1,160 @@
+
+.testimon{
+    position: relative;
+    left: -15rem;
+    top: 5rem;
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 200px; 
+   
+}
+
+
+.t-blur{
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -9;
+    left: -1%;
+    position: absolute;
+    filter: blur(72px);
+}
+
+
+.t-heading{
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: -2rem;
+}
+.t-heading>:nth-of-type(1){
+    font-size: 1.8rem;
+    font-weight: bold;
+    
+}
+.t-heading>:nth-of-type(2){
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.t-heading span:nth-of-type(2){
+    color: var(--orange);
+}
+
+.testimonial .t-slider{
+    
+    width: 50%; 
+    text-align: center;
+}
+
+.testimonial .slick-arrow.slick-prev,
+.testimonial .slick-arrow.slick-next {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 5px;
+}
+.testimonial .slick-prev::before,
+.testimonial .slick-next::before {
+  display: none;
+}
+.testimonial .slick-arrow.slick-next {
+  right: -70px;
+}
+.testimonial .slick-arrow.slick-prev {
+  left: -70px;
+}
+.testimonial .slick-dots li button:before {
+  font-size: 15px;
+}
+.testimonial .slick-dots li {
+  top: 15px;
+}
+
+@media screen and (max-width:1280px) {
+
+    .testimonial{
+        margin-top: 150px; 
+       
+    }
+}
+@media screen and (max-width:1080px) {
+
+    .testimonial{
+        margin-top: -30px; 
+        transform: scale(0.9);
+       
+    }
+}
+@media screen and (max-width:980px) {
+
+    .testimonial{
+        margin-top: -30px; 
+        transform: scale(0.8);
+       
+    }
+    .testimonial .t-slider{
+    
+        width: 60%; 
+        text-align: center;
+    }
+}
+@media screen and (max-width:680px) {
+
+    .testimonial{
+        margin-top: -30px; 
+        transform: scale(0.7);
+       
+    }
+    .testimonial .t-slider{
+    
+        width: 75%; 
+        text-align: center;
+    }
+}
+@media screen and (max-width:580px) {
+
+    .testimonial{
+        margin-top: -30px; 
+        transform: scale(0.7);
+       
+    }
+    .testimonial .t-slider{
+    
+        width: 80%; 
+        text-align: center;
+    }
+    .t-blur{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .testimonial{
+        margin-top: -30px; 
+        transform: scale(0.7);
+       
+    }
+    .testimonial .t-slider{
+    
+        width: 90%; 
+        text-align: center;
+    }
+    .t-blur{
+        display: none;
+    }
+}

@@ -1,0 +1,316 @@
+
+.n-left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    left: -0.5rem;
+    
+    
+}
+.n-name>img{
+    /* font-size: 1.3rem; */
+    font-weight: bold;
+    height: 3.4rem;
+    width: 8rem; 
+    margin-top:0px;
+    border-radius: 10px; 
+}
+.n-title>img{
+ 
+    height: 66px;
+    width: 4rem; 
+    margin-top:0px;
+    border-radius: 10px; 
+}
+
+ul{
+    list-style-type: none;
+}
+
+.wrapper-box{
+  
+    box-shadow:  0 6px 4px -4px rgba(187, 180, 180, 0.7); 
+}
+
+.n-right{
+   
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    padding-right: 80px;
+}
+
+
+.n-list> ul>.nav-link>li{
+   
+    cursor: pointer;
+}
+
+.n-list> ul> li:hover{
+    
+    cursor: pointer;
+    color: var(--orange);
+}
+/* .n-list .navbar-nav .active{
+    
+    cursor: pointer;
+    color: var(--orange);
+} */
+
+.navmenu>.navbar-collapse{
+
+    padding-right: 60px;
+}
+
+.n-button{
+    
+    flex: 2;
+}
+
+.nav-row>*{
+   
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .n-left{
+       
+        align-items: flex-star;
+        display: block;
+        gap: 0rem;
+        flex: none;
+        position: relative;
+        left: 2px;
+    }    
+
+    .n-name> img{
+      
+        height: 3rem;
+        width: 8rem;
+    }
+
+
+    .navmenu>.navbar-toggler{
+        
+        background-color: var(--orange);
+        border: 1px solid;
+        height: 41px;
+        border: none;
+        width: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow:  0 6px 4px -4px rgba(233, 201, 21, 0.7); 
+    }
+    .navbar-expand-sm>.navmenu>.navbar-collapse>.n-list> ul {
+        
+        flex-direction: column;
+        transform: scale(0.8);
+    }
+    .n-list> .navbar-nav > .nav-link{
+        
+        color: black;
+        cursor: pointer;
+    }
+    .n-list>.navbar-nav>.nav-link>#signup {
+        position: relative;
+        top: 2rem;
+        left: -9.2rem;
+        font-size: 20px;
+        width: 145px;
+    }
+}
+
+  @media screen and (max-width: 575px) {
+ 
+    .navmenu>.n-left{
+        
+        align-items: flex-star;
+        display: flex;
+        gap: 0rem;
+        flex: none;
+        position: relative;
+        left: 2px;
+    }
+
+    .n-name> img{
+        height: 3rem;
+        width: 8rem;
+    }
+
+    .navmenu>.navbar-toggler{
+        background-color: var(--orange);
+        border: 1px solid;
+        height: 41px;
+        border: none;
+        width: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow:  0 6px 4px -4px rgba(233, 201, 21, 0.7); 
+        
+    }
+
+
+    #navbarCollapse>.n-list {
+        
+        transform: scale(1);
+        position: relative;
+    }
+
+    #navbarCollapse>.n-list>.mb-2 {
+        transform: scale(0.69);
+        position: relative;
+        left: -95px;
+        display: flex;
+        flex: -1 1;
+        top: -36px;
+    }
+
+    .n-list> ul>.nav-link>li {
+        cursor: pointer;
+        font-size: 30px;
+    }
+    
+    #signup {
+        margin-left: 200px;
+        width: 100px;
+        height: 60px;
+    }
+
+    #login {
+        margin-left: 210px;
+        width: 100px;
+        height: 60px;
+    }
+
+    .navbar-expand-sm>.navmenu>.navbar-collapse>.n-list> ul {
+        flex-direction: column;
+        padding-left: 4rem;
+        font-size:18px;
+    }
+
+    .n-list> .navbar-nav > .nav-link{
+        color: black;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    #navbarCollapse>.n-list {
+      
+        position: relative;
+        left: 0px;
+    }
+
+    .navbar>.container-fluid>.n-left{
+      
+        position: relative;
+        left: 5px;
+        top: -10px;
+        gap: 0px;
+    }
+
+    .n-left>.n-name> :nth-child(1){
+        height: 75px;
+        width: 150px;
+    }
+
+    #signup{
+        position: relative;
+        top: 2rem;
+        left:-9.2rem
+    }
+
+    #login{
+        position: relative;
+        top: 2rem;
+        left:-9.5rem
+    }
+
+}
+@media screen and (max-width: 830px) {
+    #navbarCollapse>.n-list>.mb-2 {
+        
+        transform: scale(0.69);
+        position: relative;
+        left: -95px;
+        display: flex;
+        flex: -1; 
+    }
+
+    .navmenu>.n-left{
+        
+        transform: scale(0.7);
+        position: relative;
+        left: -1rem;
+        top: -12px;
+        
+    }
+
+    .n-left>.n-name> img{
+        height: 53px;
+        width: 120px;
+    }
+
+}
+
+@media screen and (max-width: 920px) {
+
+    .collapse>.n-list>.navbar-nav{
+        
+        transform: scale(0.8);
+        position: relative;
+         left: -35px;
+         transition: all 2s linear;
+    }
+
+    .n-left{
+        
+        transform: scale(0.9);
+    }
+
+    .n-name>img{
+        position: relative;
+        left:-1.6rem;
+    }
+
+}
+
+
+@media screen and (max-width: 1080px) {
+       
+    .navmenu>.n-left {
+        /* display: block; */
+        gap: 1rem;
+        position: relative;
+        left: 0.9rem;
+    }
+    .n-left>.n-name>img{
+        height: 65px;
+        width:145px;
+    }
+    .navmenu>.navbar-collapse {
+        
+        padding-right: 0px;
+    }
+    .navbar-expand-sm .navbar-nav {
+        flex-direction: row;
+        transform: scale(0.89);
+        
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #n-mob{
+        position:relative;
+        left: 1.5rem;
+    }
+}
+      

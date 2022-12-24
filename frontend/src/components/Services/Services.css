@@ -1,0 +1,350 @@
+.services {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 30rem;
+    margin-bottom: 8rem;
+    margin-top: 10rem;
+    /* scroll view */
+    padding-top: 3rem;
+    
+  }
+
+  .firstCard .card > img {
+    transform: scale(0.2);
+    margin-bottom: -11rem;
+    position: relative;
+    top: -101px;
+    border-radius: 100%;
+  }
+  .secondCard .card > img {
+    transform: scale(0.2);
+    margin-bottom: -17rem;
+    position: relative;
+    top: -152px;
+    border-radius: 100%;
+  }
+
+  .thirdCard .card > img {
+    transform: scale(0.15);
+    margin-bottom: -23rem;
+    position: relative;
+    top: -215px;
+    border-radius: 100%;
+  }
+
+  /* left side */
+  .ourservices {
+    display: flex;
+    flex:0.4;
+    flex-direction: column;
+    position: relative;
+    align-items: left;
+    gap:0px;
+    top: -20px;
+  }
+  
+  .ourservices > :nth-child(1) {
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .ourservices > :nth-child(2) {
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    
+
+  }
+  .ourservices > :nth-child(3) {
+    color: var(--gray);
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+
+  .services .ourservices ul{
+    list-style-type: square;
+  }
+
+  .s-button {
+    width: 9rem;
+    height: 2rem;
+    margin-top: 1rem;
+    
+  }
+  /* right sided */
+  .cards {
+    position: relative;
+  } 
+  .cards > * {
+    position: absolute;
+  }
+  
+  /* blur */
+  .s-blur2 {
+    left: 14rem;
+    top: 8rem;
+  }
+  
+  .s-blur1 {
+    top: 13rem;
+    left: -18rem;
+  }
+  .cards>.firstCard{
+    left: 24rem;
+  }
+  .cards>secondCard{
+  top:10rem;
+  left: -4rem;
+  }
+  .cards>thirdCard{
+    top:19rem;
+    left: 12rem;
+    }
+
+  
+  @media screen and (max-width: 1080px) {
+    .ourservices{
+      flex: 0.49;
+    }
+    .cards {
+      position: relative;
+      transform: scale(0.8);
+    }
+    .card.thirdcard{
+          position: relative;
+          left: 14rem;
+        }
+    .card.secondcard{
+          position: relative;
+          left: 2rem;
+          top: 9.5rem;
+        }
+   
+  }
+
+  @media screen and (max-width: 990px) {
+    .cards {
+      position: relative;
+      transform: scale(0.85);
+      left: -105px;
+    
+  }
+  .services{
+    margin-top:-15rem;
+    width: 109%;
+    margin-left: -42px;
+  }
+  .ourservices{
+    transform: scale(0.89);
+    left: -10px;
+  }
+  /* #thirdcard{
+    position: relative;
+    left: 14rem;
+  }
+#secondcard{
+    position: relative;
+    left: 2rem;
+    top: 9.5rem;
+  } */
+  }
+
+  @media screen and (max-width: 890px) {
+    .cards {
+      position: relative;
+      transform: scale(0.69);
+      left: -55px;
+  }
+  .ourservices > :nth-child(3) {
+    position: relative;
+    left: -20px;
+
+  }
+  
+  }
+
+  @media screen and (max-width: 760px) {
+    .cards {
+      position: relative;
+      transform: scale(0.6);
+      left: -132px;
+  }
+  
+  .services{
+    
+    width: 112%;
+    margin-left: -38px;
+    margin-top: -24rem;
+  }
+  .ourservices > :nth-child(3) > ul >li {
+    position: relative;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  .ourservices > :nth-child(3) {
+    
+    left: -10px;
+    margin-right: -2rem;
+  }
+  .ourservices{
+    transform: scale(0.75);
+    left: -35px;
+   flex: 0.6;
+  }
+  .services .ourservices > :nth-child(1) {
+    font-size: 1.3rem;
+  }
+  .services .ourservices > :nth-child(2) {
+    font-size: 2.2rem;
+  }
+
+  }
+  @media screen and (max-width: 680px) {
+    .cards {
+      position: relative;
+      transform: scale(0.5);
+      left: -200px;
+  }
+  
+  .services{
+    
+    width: 112%;
+    margin-left: -38px;
+    margin-top: -20rem;
+  }
+  .ourservices > :nth-child(3) {
+    position: relative;
+    left: -27px;
+    width: 100%;
+  }
+  .services .ourservices{
+    transform: scale(0.85);
+    left: -10px;
+   flex: 0.8;
+  }
+  
+  }
+
+  @media screen and (max-width: 520px) {
+    .cards {
+      position: relative;
+      transform: scale(0.6);
+      left: -16px;
+      top: -150px;
+  }
+  
+  .services{
+    flex-direction: column;
+    width: 112%;
+    margin-left: -38px;
+    margin-top: -20rem;
+  }
+  .ourservices > :nth-child(3) {
+    position: relative;
+    left: -27px;
+    width: 100%;
+  }
+  .services .ourservices{
+    transform: scale(0.85);
+    left: -12px;
+   flex: 0.8;
+  }
+  
+  }
+
+  
+  @media screen and (max-width: 490px) {
+    .cards {
+      position: relative;
+      transform: scale(0.58);
+      left: -100px;
+      top: -34px;
+  }
+
+  .cards .firstCard
+  {
+    width: 100%;
+  }
+  
+  .cards .secondCard
+  {
+    width: 100%;
+  }
+
+  .cards .thirdCard
+  {
+    position: relative;
+    width: 100%;
+   
+  }
+
+  
+  .services{
+    flex-direction: column;
+    width: 112%;
+    margin-left: -8px;
+    margin-top: -18rem;
+    /* height: 143vh; */
+    margin-bottom: 20rem;
+  }
+ 
+  .services>.ourservices > :nth-child(1) {
+    position: relative;
+    font-size: 1.3rem;
+  }
+
+  .ourservices > :nth-child(2) {
+    position: relative;
+    font-size: 1.8rem;
+  }
+
+  .ourservices > :nth-child(3) {
+    position: relative;
+    left:-18px;
+    
+    
+  }
+
+  .services .ourservices{
+    transform: scale(0.9);
+    left: -37px;
+    width:23rem;
+   flex: 0.8;
+  }
+
+  .services .ourservices ul{
+    list-style-type: square;
+  }
+
+
+  .firstCard>.card{
+    position: relative;
+    left: -75px;
+  }
+  .secondCard>.card{
+    position: relative;
+    left: 40px;
+    top:20px;
+  }
+  .thirdCard>.card{
+    position: relative;
+    left: -175px;
+    top: 134px;
+  }
+
+  .ourservices > :nth-child(3) > ul >li {
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  }
+
+  @media screen and (max-width: 418px) {
+    .services{
+     
+      margin-top: -23rem;
+      
+    }
+}

@@ -1,0 +1,53 @@
+.dash {
+    text-align: center;
+  }
+  
+  .dash-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  .dash-header {
+    background-color: #282c34;
+    min-height: 100vh;
+  }
+  .dash {
+    /* padding: 0.5rem 3.5rem; */
+    color: var(--black);
+    background: linear-gradient(
+      106.37deg,
+      #ffe1bc 29.63%,
+      #ffcfd1 51.55%,
+      #f3c6f1 90.85%
+    );
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .dash-link {
+    color: #61dafb;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  @keyframes dash-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .dashGlass {
+    display: grid;
+    height: 97%;
+    width: 97%;
+    background: rgba(255, 255, 255, 0.54);
+    border-radius: 2rem;
+    gap: 16px;
+    grid-template-columns: 11rem auto 20rem;
+  }

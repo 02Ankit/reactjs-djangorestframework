@@ -1,0 +1,310 @@
+.works{
+    padding: 0 3rem 0 3 rem;
+    display: flex;
+    
+    height: 90vh;
+    margin-top: 4rem;
+    margin-left: 3rem;
+   
+  /* scroll */
+  align-items: center;
+}
+.w-left .w-ourservices > span > ul{
+  list-style-type: square;
+}
+/* left side */
+.w-ourservices {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.w-ourservices > :nth-child(1) {
+  color: var(--black);
+  font-size: 1.8rem;
+  font-weight: bold;
+  
+}
+.w-ourservices > :nth-child(2) {
+  color: var(--orange);
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* .w-ourservices > :nth-child(3) {
+  color: var(--gray);
+  font-size: 18px;
+  margin-top: 1rem;
+} */
+/* .s-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 2rem;
+} */
+/* right */
+.w-right{
+    position: relative;
+}
+
+.w-mainCircle{
+    left: 9rem;
+    position: relative;
+    width:  18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    top: 2rem;
+    background: whitesmoke;
+    z-index: 2;
+}
+.w-mainCircle > * {
+    position: absolute;
+  }
+/* main circle have position: absolute relative to the w-right
+and the main circle have position relative for the secondary circle.
+secondary circle have position: absolute to main circle  and main circle have position absolute for the w-right  */
+
+.w-mainCircle > :nth-child(1){
+
+    top: -2.4rem;
+    left: 6rem;
+}
+.w-mainCircle > :nth-child(2){
+
+    top: 6rem;
+    left: -2.4rem;
+}
+.w-mainCircle > :nth-child(3){
+
+    top: 6rem;
+    left: 6rem;
+}
+.w-mainCircle > :nth-child(4){
+
+    left: 14.4rem;
+    top: 5rem;
+}
+
+.w-mainCircle > :nth-child(5){
+
+    left: 6rem;
+    top: 14.4rem;
+}
+.w-secCircle{
+    width: 5rem;
+    height: 5rem;
+    /* position:absolute; */
+    border-radius: 100%;
+    border: 5px solid #ebebeb;
+   
+    justify-content: center;
+    display: flex;
+    align-items : center;
+    background: whitesmoke;
+}
+.w-secCircle> img {
+    transform: scale(0.2);
+}
+.w-backCircle{
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    z-index: -1;
+}
+.blueCircle{
+background: #194988;
+left: 18rem;
+top: 0rem;
+}
+.yellowCircle{
+    background: #F5C32c;
+    left: 18rem;
+    top: 8rem;
+    }
+
+
+
+    @media screen and (max-width: 1280px) {
+      .w-right {
+        position: relative;
+        left: -4rem;
+    }
+  }
+
+
+  @media screen and (max-width: 1080px) {
+      
+    .w-right {
+      display: flex;
+      flex: 1;
+      position: relative;
+      left: -180px;
+      transform: scale(0.9);
+  }
+
+}
+
+@media screen and (max-width: 980px) {
+  .works {
+   
+    margin-left: -1.2rem;
+ 
+}
+  .w-right {
+  
+    transform: scale(0.8);
+}
+.w-left {
+
+  transform: scale(0.8);
+}
+}
+
+@media screen and (max-width: 860px) {
+     .works{
+      margin-top: -95px;
+     } 
+  .w-right {
+    
+    transform: scale(0.75);
+}
+
+.w-ourservices > :nth-child(1) {
+
+  font-size: 1.5rem;
+
+}
+.w-ourservices > :nth-child(2) {
+  
+  font-size: 2rem;
+
+}
+.w-left{
+  position: relative;
+  left: 18px;
+
+}
+}
+@media screen and (max-width: 760px) {
+  .works{
+    margin-top: -65px;
+   } 
+  .w-right {
+    
+    transform: scale(0.6);
+    margin-left: -198px;
+    position: relative;
+    left: -138px;
+}
+.w-left {
+  display: flex;
+   flex: 2; 
+  transform: scale(0.8);
+}
+.w-ourservices > :nth-child(1) {
+  font-size: 1.3rem;
+}
+.w-ourservices > :nth-child(2) {
+  font-size: 1.7rem;
+}
+
+}
+
+@media screen and (max-width: 660px) {
+   .works{
+
+    margin-top: -65px;
+   margin-left: -60px;
+   }
+  .w-right {
+    
+    transform: scale(0.5);
+    margin-left: -198px;
+    position: relative;
+    left: -78px;
+}
+.w-left {
+  display: flex;
+   flex: 2; 
+  transform: scale(0.8);
+}
+
+}
+
+@media screen and (max-width: 560px) {
+   .works{
+  flex-direction: column; 
+  margin-top: -1rem;
+  height: 148vh;
+  margin-left: -60px;
+  
+  }
+  .w-right {
+    
+    transform: scale(0.5);
+   
+    position: relative;
+    left:  100px;
+    top: -314px;
+    
+    
+}
+.w-left {
+
+transform: scale(0.8);
+position: relative;
+left: 45px;
+width: 142%;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+  .works{
+    margin-top: -2rem;
+    margin-left: -70px;
+  }
+  
+  .w-left {
+    position: relative;
+    left: 2rem;
+    top: -3rem;
+    
+  }
+
+  .i-blur{
+    display: none;
+  }
+
+  .w-right {
+    transform: scale(0.6);
+    left:  -10px;
+    top: -144px;
+}
+
+}
+@media screen and (max-width: 480px) {
+  .works{
+    margin-top: -2rem;
+    margin-left: -20px;
+    display: block;
+  }
+  .w-left {
+    position: relative;
+    left: 4rem;
+    top: -3rem;
+    
+    
+  }
+  .w-ourservices{
+    display: flex;
+    position: relative;
+    left: -3rem;
+    top: -3rem;
+  }
+  .w-right {
+    transform: scale(0.6);
+    left:  50px;
+    top: -144px;
+}
+}

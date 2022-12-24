@@ -1,0 +1,19 @@
+.notify{
+
+    text-align: center;
+    background: yellow;
+    height: 62px;
+    margin-top: -1rem;
+
+}
+
+.notify>h2{
+  
+    padding-top: 1.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(144, 142, 142);
+}
+.notify .iconClose{
+    cursor: pointer;
+}
